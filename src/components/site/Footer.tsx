@@ -11,8 +11,8 @@ export function Footer() {
         <div className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Pixel Edge Labs · pixeledgelabs.pro
         </div>
-        <a href="mailto:info@pixeledgelabs.pro" className="text-sm text-muted-foreground hover:text-foreground transition">
-          info@pixeledgelabs.pro
+        <a href="mailto:d.hasan@pixeledgelabs.pro" className="text-sm text-muted-foreground hover:text-foreground transition">
+          d.hasan@pixeledgelabs.pro
         </a>
       </div>
     </footer>

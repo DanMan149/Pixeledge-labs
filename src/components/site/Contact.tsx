@@ -15,10 +15,10 @@ export function Contact() {
             Tell us about your project. We'll reply within 24 hours with next steps and a free discovery call.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="mailto:info@pixeledgelabs.pro">
+            <a href="mailto:d.hasan@pixeledgelabs.pro">
               <Button size="lg" className="bg-gradient-brand text-primary-foreground border-0 hover:opacity-90 h-12 px-6">
                 <Mail className="mr-2 h-4 w-4" />
-                info@pixeledgelabs.pro
+                d.hasan@pixeledgelabs.pro
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </a>
