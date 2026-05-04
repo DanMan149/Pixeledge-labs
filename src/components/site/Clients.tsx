@@ -1,23 +1,26 @@
+import usashoppershub from "@/assets/clients/usashoppershub.png";
+import tif from "@/assets/clients/tif.png";
+import sykd from "@/assets/clients/sykd.png";
+import pikachubazaar from "@/assets/clients/pikachubazaar.png";
+import briqon from "@/assets/clients/briqon.png";
+import nexusprints from "@/assets/clients/nexusprints.png";
+import fitnesspulse from "@/assets/clients/fitnesspulse.png";
+
 const clients = [
-  { name: "USAShoppersHub", work: "Ecommerce Store" },
-  { name: "TIF Pakistan", work: "Web Dev & Social Media" },
-  { name: "SYKD Group", work: "Web Development" },
-  { name: "Pikachu Bazaar", work: "Ecommerce Store" },
-  { name: "Briqon.com", work: "Web Development" },
+  { name: "USAShoppersHub", work: "Ecommerce Store", logo: usashoppershub },
+  { name: "TIF Pakistan", work: "Web Dev & Social Media", logo: tif },
+  { name: "SYKD Group", work: "Web Development", logo: sykd },
+  { name: "Pikachu Bazaar", work: "Ecommerce Store", logo: pikachubazaar },
+  { name: "Briqon", work: "Web Development", logo: briqon },
+  { name: "Nexus 3D Prints", work: "E-Commerce Store", logo: nexusprints },
+  { name: "Fitness Pulse", work: "Gym Management Software", logo: fitnesspulse },
 ];
 
-function Logo({ name, work }: { name: string; work: string }) {
-  const initials = name
-    .replace(/\.com$/, "")
-    .split(/[\s]+/)
-    .map((w) => w[0])
-    .slice(0, 2)
-    .join("")
-    .toUpperCase();
+function Logo({ name, work, logo }: { name: string; work: string; logo: string }) {
   return (
     <div className="group flex items-center gap-4 rounded-2xl border border-border bg-card/40 backdrop-blur px-6 py-5 min-w-[300px] transition hover:border-[var(--brand)]/50 hover:bg-card/70">
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-brand font-display font-semibold text-primary-foreground">
-        {initials}
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/90 overflow-hidden">
+        <img src={logo} alt={`${name} logo`} className="h-full w-full object-contain" loading="lazy" />
       </div>
       <div>
         <div className="font-semibold text-foreground">{name}</div>
@@ -41,7 +44,6 @@ export function Clients() {
       </div>
 
       <div className="mt-14 relative overflow-hidden">
-        {/* edge fades */}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
 
