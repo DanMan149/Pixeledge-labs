@@ -16,7 +16,6 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-8 label-mono text-muted-foreground">
             <a href="#services" className="hover:text-foreground transition">Services</a>
             <a href="#work" className="hover:text-foreground transition">Portfolio</a>
-            <a href="#testimonials" className="hover:text-foreground transition">Voices</a>
             <a href="#faq" className="hover:text-foreground transition">FAQ</a>
             <a href="#contact" className="hover:text-foreground transition">Contact</a>
           </div>
@@ -24,11 +23,6 @@ export function Navbar() {
             <Button variant="ghost" size="icon" onClick={toggle} aria-label="Toggle theme" className="rounded-none">
               {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
-            <a href="#contact" className="hidden sm:inline-flex">
-              <Button className="rounded-none bg-[var(--brand-2)] text-[var(--accent-foreground)] hover:opacity-90 label-mono">
-                Menu
-              </Button>
-            </a>
           </div>
         </nav>
       </div>
