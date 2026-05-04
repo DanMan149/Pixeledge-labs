@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Quote } from "lucide-react";
 
 const items = [
   {
@@ -26,6 +25,24 @@ const items = [
     name: "Co-founder",
     company: "Pikachu Bazaar",
   },
+  {
+    quote:
+      "They delivered our 3D print storefront ahead of schedule with a checkout flow that just works. Sales picked up the same week we launched.",
+    name: "Founder",
+    company: "Nexus 3D Prints",
+  },
+  {
+    quote:
+      "Our gym management software finally feels modern. Members, trainers, and billing — all in one clean dashboard. The team understood our workflow from day one.",
+    name: "Owner",
+    company: "Fitness Pulse",
+  },
+  {
+    quote:
+      "Pixel Edge Labs treats every detail like it matters. Communication was flawless and the final build exceeded what we scoped.",
+    name: "Project Lead",
+    company: "Briqon",
+  },
 ];
 
 export function Testimonials() {
@@ -44,7 +61,6 @@ export function Testimonials() {
         </h2>
 
         <div className="relative mt-12 glass-card rounded-3xl p-10 sm:p-14 min-h-[260px] flex flex-col items-center justify-center">
-          <Quote className="h-10 w-10 text-[var(--brand)] opacity-60" />
           {items.map((t, idx) => (
             <div
               key={idx}
