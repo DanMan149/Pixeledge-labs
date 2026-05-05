@@ -5,6 +5,7 @@ import pikachubazaar from "@/assets/clients/pikachubazaar.png";
 import briqon from "@/assets/clients/briqon.png";
 import nexusprints from "@/assets/clients/nexusprints.png";
 import fitnesspulse from "@/assets/clients/fitnesspulse.png";
+import todaysagift from "@/assets/clients/todaysagift.png";
 
 const clients = [
   { name: "USAShoppersHub", work: "Ecommerce Store", logo: usashoppershub },
@@ -14,6 +15,7 @@ const clients = [
   { name: "Briqon", work: "Web Development", logo: briqon },
   { name: "Nexus 3D Prints", work: "E-Commerce Store", logo: nexusprints },
   { name: "Fitness Pulse", work: "Gym Management Software", logo: fitnesspulse },
+  { name: "Today's A Gift", work: "E-Commerce & SEO", logo: todaysagift },
 ];
 
 function Logo({ name, work, logo }: { name: string; work: string; logo: string }) {
