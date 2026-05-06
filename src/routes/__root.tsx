@@ -36,8 +36,10 @@ export const Route = createRootRoute({
       { property: "og:description", content: "Web development, mobile apps, digital marketing & social media — engineered for growth." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: "/pel-logo.png" },
-      { name: "twitter:image", content: "/pel-logo.png" },
+      { property: "og:image", content: "https://pixeledgelabs.pro/pel-logo.png" },
+      { name: "twitter:image", content: "https://pixeledgelabs.pro/pel-logo.png" },
+      { name: "robots", content: "index, follow" },
+      { name: "theme-color", content: "#1a1a1a" },
     ],
     links: [
       {

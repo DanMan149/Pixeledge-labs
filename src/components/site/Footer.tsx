@@ -1,4 +1,12 @@
 import logo from "@/assets/pel-logo.png";
+import { Linkedin, Instagram, AtSign, Twitter } from "lucide-react";
+
+const socials = [
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/pixel-edge-labs/", icon: Linkedin },
+  { name: "Instagram", href: "https://www.instagram.com/pixeledgelabs/", icon: Instagram },
+  { name: "Threads", href: "https://www.threads.com/@pixeledgelabs/", icon: AtSign },
+  { name: "X", href: "https://x.com/pixeledgelabs", icon: Twitter },
+];
 
 export function Footer() {
   return (
@@ -11,9 +19,20 @@ export function Footer() {
         <div className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Pixel Edge Labs
         </div>
-        <a href="mailto:d.hasan@pixeledgelabs.pro" className="text-sm text-muted-foreground hover:text-foreground transition">
-          d.hasan@pixeledgelabs.pro
-        </a>
+        <div className="flex items-center gap-1">
+          {socials.map((s) => (
+            <a
+              key={s.name}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={s.name}
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition"
+            >
+              <s.icon className="h-4 w-4" />
+            </a>
+          ))}
+        </div>
       </div>
     </footer>
   );
