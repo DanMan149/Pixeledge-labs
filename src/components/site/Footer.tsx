@@ -9,7 +9,7 @@ export function Footer() {
           Pixel Edge <span className="text-gradient">Labs</span>
         </div>
         <div className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Pixel Edge Labs · pixeledgelabs.pro
+          © {new Date().getFullYear()} Pixel Edge Labs
         </div>
         <a href="mailto:d.hasan@pixeledgelabs.pro" className="text-sm text-muted-foreground hover:text-foreground transition">
           d.hasan@pixeledgelabs.pro
