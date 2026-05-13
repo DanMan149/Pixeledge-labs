@@ -47,10 +47,24 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
+          "@id": "https://pixeledgelabs.pro/#organization",
           name: "Pixel Edge Labs",
+          alternateName: "PEL",
           url: "https://pixeledgelabs.pro/",
-          logo: "https://pixeledgelabs.pro/pel-logo.png",
-          email: "d.hasan@pixeledgelabs.pro",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://pixeledgelabs.pro/pel-logo.png",
+            width: 512,
+            height: 512,
+          },
+          description:
+            "Creative technology studio building high-performance websites, mobile apps, and growth-driven digital marketing & social media campaigns.",
+          contactPoint: {
+            "@type": "ContactPoint",
+            email: "d.hasan@pixeledgelabs.pro",
+            contactType: "customer support",
+            availableLanguage: ["English"],
+          },
           sameAs: [
             "https://www.linkedin.com/company/pixel-edge-labs/",
             "https://www.instagram.com/pixeledgelabs/",
@@ -64,18 +78,50 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
+          "@id": "https://pixeledgelabs.pro/#service",
           name: "Pixel Edge Labs",
           url: "https://pixeledgelabs.pro/",
           image: "https://pixeledgelabs.pro/pel-logo.png",
+          logo: "https://pixeledgelabs.pro/pel-logo.png",
+          priceRange: "$$",
+          email: "d.hasan@pixeledgelabs.pro",
           description:
             "Creative technology studio offering web development, mobile app development, digital marketing, and social media management.",
-          areaServed: "Worldwide",
+          areaServed: { "@type": "Place", name: "Worldwide" },
           serviceType: [
             "Web Development",
             "Mobile App Development",
             "Digital Marketing",
             "Social Media Management",
           ],
+          sameAs: [
+            "https://www.linkedin.com/company/pixel-edge-labs/",
+            "https://www.instagram.com/pixeledgelabs/",
+            "https://www.threads.com/@pixeledgelabs/",
+            "https://x.com/pixeledgelabs",
+          ],
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Services",
+            itemListElement: [
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Web Development", description: "Production-grade websites and web apps. Performant, SEO-ready, and built on a modern stack." } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mobile App Development", description: "Native-feel iOS & Android apps with elegant UX, robust backends, and seamless release pipelines." } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Digital Marketing", description: "SEO, content, and paid acquisition that turns traffic into a measurable, repeatable growth engine." } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management", description: "Always-on social presence — creative, content production, community, and growth." } },
+            ],
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://pixeledgelabs.pro/#website",
+          url: "https://pixeledgelabs.pro/",
+          name: "Pixel Edge Labs",
+          publisher: { "@id": "https://pixeledgelabs.pro/#organization" },
+          inLanguage: "en",
         }),
       },
     ],
