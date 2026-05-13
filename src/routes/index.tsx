@@ -65,40 +65,14 @@ export const Route = createFileRoute("/")({
             contactType: "customer support",
             availableLanguage: ["English"],
           },
-          sameAs: [
-            "https://www.linkedin.com/company/pixel-edge-labs/",
-            "https://www.instagram.com/pixeledgelabs/",
-            "https://www.threads.com/@pixeledgelabs/",
-            "https://x.com/pixeledgelabs",
-          ],
-        }),
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ProfessionalService",
-          "@id": "https://pixeledgelabs.pro/#service",
-          name: "Pixel Edge Labs",
-          url: "https://pixeledgelabs.pro/",
-          image: "https://pixeledgelabs.pro/pel-logo.png",
-          logo: "https://pixeledgelabs.pro/pel-logo.png",
-          priceRange: "$$",
-          email: "d.hasan@pixeledgelabs.pro",
-          description:
-            "Creative technology studio offering web development, mobile app development, digital marketing, and social media management.",
           areaServed: { "@type": "Place", name: "Worldwide" },
-          serviceType: [
+          knowsAbout: [
             "Web Development",
             "Mobile App Development",
             "Digital Marketing",
             "Social Media Management",
-          ],
-          sameAs: [
-            "https://www.linkedin.com/company/pixel-edge-labs/",
-            "https://www.instagram.com/pixeledgelabs/",
-            "https://www.threads.com/@pixeledgelabs/",
-            "https://x.com/pixeledgelabs",
+            "SEO",
+            "E-commerce",
           ],
           hasOfferCatalog: {
             "@type": "OfferCatalog",
@@ -110,6 +84,12 @@ export const Route = createFileRoute("/")({
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management", description: "Always-on social presence — creative, content production, community, and growth." } },
             ],
           },
+          sameAs: [
+            "https://www.linkedin.com/company/pixel-edge-labs/",
+            "https://www.instagram.com/pixeledgelabs/",
+            "https://www.threads.com/@pixeledgelabs/",
+            "https://x.com/pixeledgelabs",
+          ],
         }),
       },
       {
