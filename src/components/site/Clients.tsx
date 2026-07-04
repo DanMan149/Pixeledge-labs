@@ -6,6 +6,12 @@ import briqon from "@/assets/clients/briqon.png";
 import nexusprints from "@/assets/clients/nexusprints.png";
 import fitnesspulse from "@/assets/clients/fitnesspulse.png";
 import todaysagift from "@/assets/clients/todaysagift.png";
+import alnoor from "@/assets/clients/alnoor.png";
+import duneandpalm from "@/assets/clients/duneandpalm.png";
+import falconfreight from "@/assets/clients/falconfreight.png";
+import majliscoffee from "@/assets/clients/majliscoffee.png";
+import miragerealty from "@/assets/clients/miragerealty.png";
+import oasisfit from "@/assets/clients/oasisfit.png";
 
 const clients = [
   { name: "USAShoppersHub", work: "Ecommerce Store", logo: usashoppershub },
@@ -16,6 +22,12 @@ const clients = [
   { name: "Nexus 3D Prints", work: "E-Commerce Store", logo: nexusprints },
   { name: "Fitness Pulse", work: "Gym Management Software", logo: fitnesspulse },
   { name: "Today's A Gift", work: "E-Commerce & SEO", logo: todaysagift },
+  { name: "Al Noor Interiors", work: "Web Development & Branding", logo: alnoor },
+  { name: "Dune & Palm", work: "Hospitality Website", logo: duneandpalm },
+  { name: "Falcon Freight", work: "Logistics Platform", logo: falconfreight },
+  { name: "Majlis Coffee Co.", work: "E-Commerce & Social Media", logo: majliscoffee },
+  { name: "Mirage Realty", work: "Real Estate Web App", logo: miragerealty },
+  { name: "Oasis Fit", work: "Mobile App & Marketing", logo: oasisfit },
 ];
 
 function Logo({ name, work, logo }: { name: string; work: string; logo: string }) {
