@@ -1,4 +1,4 @@
-import { ArrowRight, Briefcase, MapPin, Percent } from "lucide-react";
+import { ArrowRight, Briefcase, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const jobs = [
@@ -6,7 +6,6 @@ const jobs = [
     title: "Business Development / Lead Generation Partner",
     type: "Commission / Revenue Share",
     location: "Remote · Worldwide",
-    comp: "15–25% per closed project",
     summary:
       "Find and qualify software development opportunities and move them toward a deal. Our team joins technical and discovery calls and handles estimation, proposals, and architecture discussions.",
     responsibilities: [
@@ -25,7 +24,6 @@ const jobs = [
     title: "Experienced Upwork Bidder",
     type: "Commission Based",
     location: "Remote · Worldwide",
-    comp: "Negotiable % per acquired project",
     summary:
       "Consistently find and win relevant development projects on Upwork with sharp, personalized proposals — quality over volume. Our developers handle technical discussions, estimates, and client calls.",
     responsibilities: [
@@ -108,11 +106,7 @@ export function Careers() {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-border/60 pt-6">
-                <span className="inline-flex items-center gap-2 text-sm text-foreground/80">
-                  <Percent className="h-4 w-4 text-[var(--brand)]" />
-                  {job.comp}
-                </span>
+              <div className="mt-8 flex items-center justify-end border-t border-border/60 pt-6">
                 <a
                   href={`mailto:d.hasan@pixeledgelabs.pro?subject=${encodeURIComponent(`Application — ${job.title}`)}`}
                 >

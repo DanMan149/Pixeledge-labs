@@ -16,6 +16,7 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-8 label-mono text-muted-foreground">
             <a href="#services" className="hover:text-foreground transition">Services</a>
             <a href="#work" className="hover:text-foreground transition">Portfolio</a>
+            <a href="#careers" className="hover:text-foreground transition">Careers</a>
             <a href="#faq" className="hover:text-foreground transition">FAQ</a>
             <a href="#contact" className="hover:text-foreground transition">Contact</a>
           </div>
