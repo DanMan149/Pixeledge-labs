@@ -85,7 +85,7 @@ export function Careers() {
               <a
                 href={`mailto:d.hasan@pixeledgelabs.pro?subject=${encodeURIComponent(`Application — ${job.title}`)}`}
               >
-                <Button variant="outline" className="border-border/60 hover:bg-accent hover:text-accent-foreground">
+                <Button className="bg-gradient-brand text-primary-foreground border-0 hover:opacity-90">
                   Apply via email
                   <Mail className="ml-2 h-4 w-4" />
                 </Button>
