@@ -5,6 +5,8 @@ export type ServiceItem = {
   usd: number;
   pkr: number;
   includes: string[];
+  /** Shown only on the pricing page, not in the homepage services section. */
+  pricingOnly?: boolean;
 };
 
 export const services: ServiceItem[] = [
