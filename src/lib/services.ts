@@ -113,6 +113,7 @@ export const services: ServiceItem[] = [
       "Data synchronization",
       "Testing & troubleshooting",
     ],
+    pricingOnly: true,
   },
   {
     slug: "ai-automation",
@@ -127,6 +128,7 @@ export const services: ServiceItem[] = [
       "Custom automation logic",
       "Testing & deployment",
     ],
+    pricingOnly: true,
   },
   {
     slug: "maintenance-support",
@@ -142,6 +144,7 @@ export const services: ServiceItem[] = [
       "Performance monitoring",
       "Technical support",
     ],
+    pricingOnly: true,
   },
   {
     slug: "website-redesign",
@@ -157,5 +160,9 @@ export const services: ServiceItem[] = [
       "Existing content migration",
       "Deployment",
     ],
+    pricingOnly: true,
   },
 ];
+
+/** Services shown on the homepage services section (pricing-only items excluded). */
+export const homeServices: ServiceItem[] = services.filter((s) => !s.pricingOnly);
