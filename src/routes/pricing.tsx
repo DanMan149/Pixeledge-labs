@@ -85,12 +85,6 @@ function PricingPage() {
                     </li>
                   ))}
                 </ul>
-
-                <a href="mailto:d.hasan@pixeledgelabs.pro" className="mt-6 self-start">
-                  <span className="inline-flex items-center gap-1.5 border-b border-border pb-1 text-sm text-muted-foreground transition hover:text-foreground hover:border-foreground">
-                    Get a quote →
-                  </span>
-                </a>
               </article>
             ))}
           </div>
@@ -108,12 +102,19 @@ function PricingPage() {
               Every project is unique. Contact us with your requirements and we'll provide a tailored
               proposal.
             </p>
-            <a href="mailto:d.hasan@pixeledgelabs.pro" className="mt-8 inline-block">
-              <Button size="lg" className="bg-gradient-brand text-primary-foreground border-0 hover:opacity-90 h-12 px-6">
-                <Mail className="mr-2 h-4 w-4" />
-                Contact us
-              </Button>
-            </a>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <a href="mailto:d.hasan@pixeledgelabs.pro">
+                <Button size="lg" className="bg-gradient-brand text-primary-foreground border-0 hover:opacity-90 h-12 px-6">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Contact us
+                </Button>
+              </a>
+              <a href="mailto:d.hasan@pixeledgelabs.pro?subject=Get%20a%20quote">
+                <span className="inline-flex items-center gap-1.5 border-b border-border pb-1 text-sm text-muted-foreground transition hover:text-foreground hover:border-foreground">
+                  Get a quote →
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
