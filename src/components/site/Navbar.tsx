@@ -1,4 +1,6 @@
 import { Moon, Sun } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+
 import { useTheme } from "@/hooks/use-theme";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/pel-logo.png";
