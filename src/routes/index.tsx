@@ -61,7 +61,7 @@ export const Route = createFileRoute("/")({
             "Creative technology studio building high-performance websites, mobile apps, and growth-driven digital marketing & social media campaigns.",
           contactPoint: {
             "@type": "ContactPoint",
-            email: "d.hasan@pixeledgelabs.pro",
+            email: "hello@pixeledgelabs.pro",
             contactType: "customer support",
             availableLanguage: ["English"],
           },
