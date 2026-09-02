@@ -49,12 +49,6 @@ function PricingPage() {
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <p className="label-mono text-xs text-muted-foreground">
-                Showing prices in{" "}
-                <span className="text-foreground font-semibold">
-                  {currency === "PKR" ? "PKR (Rs)" : "USD ($)"}
-                </span>
-              </p>
               <div
                 className="inline-flex items-center rounded-md border border-border p-1 label-mono text-xs"
                 role="group"
@@ -87,6 +81,7 @@ function PricingPage() {
                 <p className="mt-5 label-mono text-xs text-muted-foreground">Starting from</p>
                 <p className="mt-1 font-display text-3xl font-semibold">
                   {formatPrice(currency, s.usd, s.pkr)}
+                  {s.monthly && <span className="text-sm text-muted-foreground font-normal">/month</span>}
                 </p>
 
                 <p className="mt-6 label-mono text-xs text-muted-foreground">Includes</p>
