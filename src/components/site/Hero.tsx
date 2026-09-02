@@ -39,10 +39,10 @@ export function Hero() {
 
           {/* Kinetic Schematic — fills the blank space above the CTA */}
           <div className="hidden lg:flex flex-col items-end justify-start pt-12 animate-fade-up" style={{ animationDelay: "120ms" }}>
-            <div className="relative w-[280px] h-[280px] xl:w-[320px] xl:h-[320px]">
+            <div className="relative w-[340px] h-[340px] xl:w-[400px] xl:h-[400px]">
               {/* 3D wireframe sphere */}
               <div className="schematic-perspective absolute inset-0 flex items-center justify-center">
-                <div className="schematic-sphere relative w-48 h-48 xl:w-56 xl:h-56">
+                <div className="schematic-sphere relative w-56 h-56 xl:w-64 xl:h-64">
                   {/* Vertical rings */}
                   <div className="absolute inset-0 rounded-full border border-[color-mix(in_oklab,var(--brand-2)_30%,transparent)]" style={{ transform: "rotateY(0deg)" }} />
                   <div className="absolute inset-0 rounded-full border border-[color-mix(in_oklab,var(--brand-2)_25%,transparent)]" style={{ transform: "rotateY(30deg)" }} />
