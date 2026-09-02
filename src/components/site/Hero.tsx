@@ -28,11 +28,11 @@ export function Hero() {
         }
       `}</style>
 
-      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-[1700px] px-4 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div>
             <p className="label-mono text-muted-foreground animate-fade-in">// Creative Technology Studio</p>
-            <h1 className="mt-6 font-display font-extrabold uppercase leading-[0.88] tracking-[-0.05em] text-[18vw] sm:text-[14vw] lg:text-[11rem] animate-fade-up">
+            <h1 className="mt-6 font-display font-extrabold uppercase leading-[0.88] tracking-[-0.05em] text-[18vw] sm:text-[14vw] lg:text-[12.5rem] animate-fade-up">
               PIXEL<br />EDGE
             </h1>
           </div>
