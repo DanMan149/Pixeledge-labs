@@ -7,6 +7,8 @@ export type ServiceItem = {
   includes: string[];
   /** Shown only on the pricing page, not in the homepage services section. */
   pricingOnly?: boolean;
+  /** Recurring monthly pricing — price is displayed with a /month suffix. */
+  monthly?: boolean;
 };
 
 export const services: ServiceItem[] = [
@@ -145,6 +147,41 @@ export const services: ServiceItem[] = [
       "Technical support",
     ],
     pricingOnly: true,
+    monthly: true,
+  },
+  {
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    desc: "Grow your online presence with targeted digital marketing strategies built to reach the right audience, generate leads, and drive measurable results.",
+    usd: 250,
+    pkr: 40000,
+    includes: [
+      "Marketing strategy",
+      "SEO optimization",
+      "Paid ads management",
+      "Content planning",
+      "Lead generation campaigns",
+      "Monthly performance reports",
+    ],
+    pricingOnly: true,
+    monthly: true,
+  },
+  {
+    slug: "social-media-management",
+    title: "Social Media Management",
+    desc: "Build a consistent, engaging social presence with content, community management, and growth across your channels.",
+    usd: 200,
+    pkr: 25000,
+    includes: [
+      "Content calendar",
+      "Post design & copywriting",
+      "Scheduling & publishing",
+      "Community management",
+      "Hashtag & trend research",
+      "Monthly analytics reports",
+    ],
+    pricingOnly: true,
+    monthly: true,
   },
   {
     slug: "website-redesign",

@@ -49,12 +49,6 @@ function PricingPage() {
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <p className="label-mono text-xs text-muted-foreground">
-                Showing prices in{" "}
-                <span className="text-foreground font-semibold">
-                  {currency === "PKR" ? "PKR (Rs)" : "USD ($)"}
-                </span>
-              </p>
               <div
                 className="inline-flex items-center rounded-md border border-border p-1 label-mono text-xs"
                 role="group"
@@ -87,6 +81,7 @@ function PricingPage() {
                 <p className="mt-5 label-mono text-xs text-muted-foreground">Starting from</p>
                 <p className="mt-1 font-display text-3xl font-semibold">
                   {formatPrice(currency, s.usd, s.pkr)}
+                  {s.monthly && <span className="text-sm text-muted-foreground font-normal">/month</span>}
                 </p>
 
                 <p className="mt-6 label-mono text-xs text-muted-foreground">Includes</p>
@@ -107,26 +102,40 @@ function PricingPage() {
             functionality, pages, integrations, or custom development will be quoted based on scope.
           </p>
 
-          <div className="mt-16 glass-card rounded-3xl p-10 sm:p-14 text-center">
-            <h2 className="font-display text-3xl sm:text-4xl font-semibold">
-              Need something <span className="text-gradient">more complex?</span>
-            </h2>
-            <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-              Every project is unique. Contact us with your requirements and we'll provide a tailored
-              proposal.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <a href="mailto:hello@pixeledgelabs.pro">
-                <Button size="lg" className="bg-gradient-brand text-primary-foreground border-0 hover:opacity-90 h-12 px-6">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Contact us
-                </Button>
-              </a>
-              <a href="mailto:hello@pixeledgelabs.pro?subject=Get%20a%20quote">
-                <span className="inline-flex items-center gap-1.5 border-b border-border pb-1 text-sm text-muted-foreground transition hover:text-foreground hover:border-foreground">
-                  Get a quote →
-                </span>
-              </a>
+          <div className="mt-16 grid gap-6 md:grid-cols-2">
+            <div className="glass-card rounded-3xl p-10 sm:p-12 text-center">
+              <h2 className="font-display text-3xl sm:text-4xl font-semibold">
+                Need something <span className="text-gradient">more complex?</span>
+              </h2>
+              <p className="mt-4 text-muted-foreground max-w-md mx-auto">
+                Every project is unique. Contact us with your requirements and we'll provide a
+                tailored proposal.
+              </p>
+              <div className="mt-8">
+                <a href="mailto:hello@pixeledgelabs.pro">
+                  <Button size="lg" className="bg-gradient-brand text-primary-foreground border-0 hover:opacity-90 h-12 px-6">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Contact us
+                  </Button>
+                </a>
+              </div>
+            </div>
+
+            <div className="glass-card rounded-3xl p-10 sm:p-12 text-center">
+              <h2 className="font-display text-3xl sm:text-4xl font-semibold">
+                Get a <span className="text-gradient">quote</span>
+              </h2>
+              <p className="mt-4 text-muted-foreground max-w-md mx-auto">
+                Tell us about your project and we'll send back a clear, no-obligation quote.
+              </p>
+              <div className="mt-8">
+                <a href="mailto:hello@pixeledgelabs.pro?subject=Get%20a%20quote">
+                  <Button size="lg" className="bg-gradient-brand text-primary-foreground border-0 hover:opacity-90 h-12 px-6">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Get a quote
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

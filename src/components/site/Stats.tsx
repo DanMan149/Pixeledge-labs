@@ -19,7 +19,7 @@ function useCountUp(target: number, duration = 1600, start = false) {
 }
 
 const items = [
-  { value: 70, suffix: "+", label: "Projects delivered" },
+  { value: 90, suffix: "+", label: "Projects delivered" },
   { value: 98, suffix: "%", label: "Client satisfaction" },
   { value: 3, suffix: "+", label: "Years in the field" },
 ];
