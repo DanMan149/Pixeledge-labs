@@ -29,7 +29,7 @@ export const Route = createFileRoute("/pricing")({
 });
 
 function PricingPage() {
-  const { currency, setCurrency } = useCurrency();
+  const { currency } = useCurrency();
 
   return (
     <main className="min-h-screen">
@@ -46,30 +46,6 @@ function PricingPage() {
               <p className="mt-4 text-muted-foreground">
                 Every engagement starts here. Scope, timeline, and complexity shape the final quote.
               </p>
-            </div>
-
-            <div className="flex flex-col items-start gap-2">
-              <div
-                className="inline-flex items-center rounded-md border border-border p-1 label-mono text-xs"
-                role="group"
-                aria-label="Currency selector"
-              >
-                {(["USD", "PKR"] as const).map((c) => (
-                  <button
-                    key={c}
-                    type="button"
-                    aria-pressed={currency === c}
-                    onClick={() => setCurrency(c)}
-                    className={`px-3 py-1.5 transition ${
-                      currency === c
-                        ? "bg-foreground text-background"
-                        : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {c}
-                  </button>
-                ))}
-              </div>
             </div>
           </div>
 

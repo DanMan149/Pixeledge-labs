@@ -33,12 +33,6 @@ const items = [
   },
   {
     quote:
-      "Our gym management software finally feels modern. Members, trainers, and billing — all in one clean dashboard. The team understood our workflow from day one.",
-    name: "Owner",
-    company: "Fitness Pulse",
-  },
-  {
-    quote:
       "Pixel Edge Labs treats every detail like it matters. Communication was flawless and the final build exceeded what we scoped.",
     name: "Project Lead",
     company: "Briqon",
