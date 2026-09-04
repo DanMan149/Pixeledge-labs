@@ -11,13 +11,12 @@ export function Navbar() {
     <header className="relative z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-5">
         <nav className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 font-display font-bold uppercase tracking-tight">
-            <img src={logo} alt="Pixel Edge Labs logo" className="h-8 w-8 rounded-md" />
-            <span className="text-sm sm:text-base">PIXEL EDGE <span className="text-muted-foreground font-normal">LABS</span></span>
+          <Link to="/" className="flex items-center" aria-label="Pixel Edge Labs — home">
+            <img src={logo} alt="Pixel Edge Labs logo" className="h-10 w-10 rounded-md" />
           </Link>
           <div className="hidden md:flex items-center gap-8 label-mono text-muted-foreground">
             <a href="/#services" className="hover:text-foreground transition">Services</a>
-            <Link to="/pricing" className="hover:text-foreground transition">Pricing</Link>
+            <Link to="/products" className="hover:text-foreground transition">Products</Link>
             <a href="/#work" className="hover:text-foreground transition">Portfolio</a>
             <a href="/#faq" className="hover:text-foreground transition">FAQ</a>
             <a href="/#contact" className="hover:text-foreground transition">Contact</a>
