@@ -4,7 +4,6 @@ import sykd from "@/assets/clients/sykd.png";
 import pikachubazaar from "@/assets/clients/pikachubazaar.png";
 import briqon from "@/assets/clients/briqon.png";
 import nexusprints from "@/assets/clients/nexusprints.png";
-import fitnesspulse from "@/assets/clients/fitnesspulse.png";
 import todaysagift from "@/assets/clients/todaysagift.png";
 import alnoor from "@/assets/clients/alnoor.png";
 import duneandpalm from "@/assets/clients/duneandpalm.png";
@@ -20,7 +19,6 @@ const clients = [
   { name: "Pikachu Bazaar", work: "Ecommerce Store", logo: pikachubazaar },
   { name: "Briqon", work: "Web Development", logo: briqon },
   { name: "Nexus 3D Prints", work: "E-Commerce Store", logo: nexusprints },
-  { name: "Fitness Pulse", work: "Gym Management Software", logo: fitnesspulse },
   { name: "Today's A Gift", work: "E-Commerce & SEO", logo: todaysagift },
   { name: "Al Noor Interiors", work: "Web Development & Branding", logo: alnoor },
   { name: "Dune & Palm", work: "Hospitality Website", logo: duneandpalm },

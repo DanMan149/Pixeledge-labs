@@ -64,7 +64,8 @@ export const products: Product[] = [
     description:
       "CrateWise keeps inventory accurate without the manual counting. Track every SKU across multiple locations, move stock between warehouses, receive purchase orders against suppliers, and get alerted before anything runs out. Barcode-first workflows mean receiving, picking, and stock takes happen at the shelf instead of at a desk.",
     images: [cratewise1, cratewise2],
-    demoState: "coming-soon",
+    demoUrl: "https://pel-ims-demo.netlify.app/",
+    demoState: "live",
     features: [
       { title: "Multi-location stock", desc: "Track quantities per warehouse, outlet, or bin with instant transfers." },
       { title: "Barcode workflows", desc: "Scan to receive, pick, adjust, and run stock takes from any device." },
