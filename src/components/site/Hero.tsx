@@ -33,7 +33,7 @@ export function Hero() {
           <div>
             <p className="label-mono text-muted-foreground animate-fade-in">// Creative Technology Studio</p>
             <h1 className="mt-6 font-display font-extrabold uppercase leading-[0.88] tracking-[-0.05em] text-[18vw] sm:text-[14vw] lg:text-[12.5rem] animate-fade-up">
-              PIXEL<br />EDGE
+              PIXEL<br />EDGE <span className="text-[var(--brand-2)]">LABS</span>
             </h1>
           </div>
 
