@@ -4,7 +4,7 @@ import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { ProductSlider } from "@/components/site/ProductSlider";
 import { Button } from "@/components/ui/button";
-import { getProduct, products } from "@/lib/products";
+import { getProduct } from "@/lib/products";
 
 export const Route = createFileRoute("/products/$slug")({
   loader: ({ params }) => {
@@ -255,4 +255,3 @@ function ProductPage() {
   );
 }
 
-export const productSlugs = products.map((p) => p.slug);
