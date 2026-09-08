@@ -15,13 +15,14 @@ export function useTheme() {
   const applyTheme = (t: Theme) => {
     if (typeof document === "undefined") return;
     const root = document.documentElement;
-    if (t === "dark") {
-      root.classList.add("dark");
-      root.classList.remove("light");
-    } else {
-      root.classList.add("light");
-      root.classList.remove("dark");
-    }
+    const body = document.body;
+    const next = t === "dark" ? "dark" : "light";
+    const previous = t === "dark" ? "light" : "dark";
+
+    root.classList.add(next);
+    root.classList.remove(previous);
+    body.classList.add(next);
+    body.classList.remove(previous);
   };
 
   const toggle = useCallback(() => {
