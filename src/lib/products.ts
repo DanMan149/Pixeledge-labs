@@ -2,12 +2,14 @@ import fitnesspulse1 from "@/assets/products/fitnesspulse-1.jpg";
 import fitnesspulse2 from "@/assets/products/fitnesspulse-2.jpg";
 import cratewise1 from "@/assets/products/cratewise-1.jpg";
 import cratewise2 from "@/assets/products/cratewise-2.jpg";
-import rosterix1 from "@/assets/products/rosterix-1.jpg";
-import rosterix2 from "@/assets/products/rosterix-2.jpg";
-import ticklio1 from "@/assets/products/ticklio-1.jpg";
-import ticklio2 from "@/assets/products/ticklio-2.jpg";
-import restaurant1 from "@/assets/products/restaurant-erp-1.jpg";
-import restaurant2 from "@/assets/products/restaurant-erp-2.jpg";
+import rosterix1 from "@/assets/products/rosterix-1.png";
+import rosterix2 from "@/assets/products/rosterix-2.png";
+import rosterix3 from "@/assets/products/rosterix-3.png";
+import rosterix4 from "@/assets/products/rosterix-4.png";
+import ticklio1 from "@/assets/products/ticklio-1.png";
+import ticklio2 from "@/assets/products/ticklio-2.png";
+import ticklio3 from "@/assets/products/ticklio-3.png";
+import restaurant1 from "@/assets/products/restaurant-erp-1.png";
 
 export type DemoState = "live" | "coming-soon" | "launching-soon";
 

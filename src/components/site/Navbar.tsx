@@ -12,7 +12,7 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-5">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center" aria-label="Pixel Edge Labs — home">
-            <img src={logo} alt="Pixel Edge Labs logo" className="h-10 w-10 rounded-md" />
+            <img src={logo} alt="Pixel Edge Labs logo" className="h-16 w-16 rounded-md sm:h-20 sm:w-20" />
           </Link>
           <div className="hidden md:flex items-center gap-8 label-mono text-muted-foreground">
             <a href="/#services" className="hover:text-foreground transition">Services</a>
