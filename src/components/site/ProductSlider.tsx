@@ -27,7 +27,7 @@ export function ProductSlider({
           loading="lazy"
           width={1280}
           height={800}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+          className={`absolute inset-0 h-full w-full object-contain object-top transition-opacity duration-700 ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
         />

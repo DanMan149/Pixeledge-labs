@@ -2,12 +2,14 @@ import fitnesspulse1 from "@/assets/products/fitnesspulse-1.jpg";
 import fitnesspulse2 from "@/assets/products/fitnesspulse-2.jpg";
 import cratewise1 from "@/assets/products/cratewise-1.jpg";
 import cratewise2 from "@/assets/products/cratewise-2.jpg";
-import rosterix1 from "@/assets/products/rosterix-1.jpg";
-import rosterix2 from "@/assets/products/rosterix-2.jpg";
-import ticklio1 from "@/assets/products/ticklio-1.jpg";
-import ticklio2 from "@/assets/products/ticklio-2.jpg";
-import restaurant1 from "@/assets/products/restaurant-erp-1.jpg";
-import restaurant2 from "@/assets/products/restaurant-erp-2.jpg";
+import rosterix1 from "@/assets/products/rosterix-1.png";
+import rosterix2 from "@/assets/products/rosterix-2.png";
+import rosterix3 from "@/assets/products/rosterix-3.png";
+import rosterix4 from "@/assets/products/rosterix-4.png";
+import ticklio1 from "@/assets/products/ticklio-1.png";
+import ticklio2 from "@/assets/products/ticklio-2.png";
+import ticklio3 from "@/assets/products/ticklio-3.png";
+import restaurant1 from "@/assets/products/restaurant-erp-1.png";
 
 export type DemoState = "live" | "coming-soon" | "launching-soon";
 
@@ -37,7 +39,7 @@ export const products: Product[] = [
     description:
       "Fitness Pulse gives gyms and fitness studios a single place to manage every member, plan, and payment. Front-desk staff can check members in seconds, trainers can manage their class rosters, and owners get a live view of attendance, renewals, and revenue. Built to replace the tangle of registers, WhatsApp reminders, and spreadsheets that most gyms still run on.",
     images: [fitnesspulse1, fitnesspulse2],
-    demoUrl: "https://fitnesspulseweb.netlify.app/",
+    demoUrl: "https://fitnesspulse.pixeledgelabs.pro/",
     demoState: "live",
     features: [
       { title: "Member management", desc: "Complete member profiles with plans, documents, medical notes, and full history." },
@@ -64,7 +66,7 @@ export const products: Product[] = [
     description:
       "CrateWise keeps inventory accurate without the manual counting. Track every SKU across multiple locations, move stock between warehouses, receive purchase orders against suppliers, and get alerted before anything runs out. Barcode-first workflows mean receiving, picking, and stock takes happen at the shelf instead of at a desk.",
     images: [cratewise1, cratewise2],
-    demoUrl: "https://pel-ims-demo.netlify.app/",
+    demoUrl: "https://cratewise.pixeledgelabs.pro/",
     demoState: "live",
     features: [
       { title: "Multi-location stock", desc: "Track quantities per warehouse, outlet, or bin with instant transfers." },
@@ -90,8 +92,9 @@ export const products: Product[] = [
       "HR software covering onboarding, attendance, leave, payroll inputs, and performance — with self-service for the whole team.",
     description:
       "Rosterix centralises the people side of your business. Keep a complete employee record from offer letter to exit, run leave and attendance by policy instead of by memory, and hand employees a self-service portal so HR stops being a ticket queue. Payroll inputs are generated automatically from approved attendance and leave.",
-    images: [rosterix1, rosterix2],
-    demoState: "coming-soon",
+    images: [rosterix1, rosterix2, rosterix3, rosterix4],
+    demoUrl: "https://rosterix.pixeledgelabs.pro/",
+    demoState: "live",
     features: [
       { title: "Employee records", desc: "Contracts, documents, job history, and org structure in one profile." },
       { title: "Attendance & shifts", desc: "Shift rosters, biometric/clock-in integration, overtime, and late tracking." },
@@ -116,8 +119,9 @@ export const products: Product[] = [
       "An internal ticketing and work-order portal where requests get logged, routed, prioritised, and resolved with a clear audit trail.",
     description:
       "Ticklio replaces the scattered emails, calls, and chat messages that internal teams run on. Staff raise a request through a simple portal, it's routed to the right team with the right priority, and everyone can see status, ownership, and history. Maintenance, IT, facilities, and admin teams get SLA timers and reporting so nothing gets quietly dropped.",
-    images: [ticklio1, ticklio2],
-    demoState: "coming-soon",
+    images: [ticklio1, ticklio2, ticklio3],
+    demoUrl: "https://ticklio.pixeledgelabs.pro/",
+    demoState: "live",
     features: [
       { title: "Request portal", desc: "Simple intake forms per category so requests arrive complete the first time." },
       { title: "Smart routing", desc: "Auto-assign tickets by department, category, location, or workload." },
@@ -142,7 +146,7 @@ export const products: Product[] = [
       "A complete restaurant operations system covering orders, kitchen display, inventory, recipe costing, staff, and multi-outlet reporting.",
     description:
       "Restaurant ERP connects the floor, the kitchen, and the back office. Orders flow from POS to the kitchen display without paper, ingredient stock depletes automatically against recipes, and owners see true food cost and margin per dish. Built for operators running one busy location or several outlets that need to be compared side by side.",
-    images: [restaurant1, restaurant2],
+    images: [restaurant1],
     demoState: "launching-soon",
     features: [
       { title: "Orders & floor plan", desc: "Dine-in, takeaway, and delivery orders mapped to tables and sections." },
